@@ -12,7 +12,7 @@ if [[ $DISABLE_KEYGEN == "false" ]]
 		f="/etc/ssh/keys/ssh_host_${t}_key"
 		if [[ ! -f $f ]]
 		 then
-			ssh-keygen -t $t -f $f
+			ssh-keygen -t $t -f $f -N ''
 		fi
 	done
 fi
