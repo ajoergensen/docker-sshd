@@ -21,7 +21,7 @@ This container may not be for everybody as I have made a few decisions to suit m
 - `SSH_PORT`: Port sshd is listening on. Useful if using `--net host`. Default is 22
 - `SSH_PERMIT_ROOT_LOGIN`: Sets `PermitRootLogin`, possible values are `yes`, `no`, `forced-command-only`, `without-password`, `prohibit-password`. Default is `prohibit-password`
 - `SSH_AUTHORIZED_KEYS_DIR`: Where sshd will look for the user's authorized_keys. Default is `.ssh/authorized_keys`
-- `SSH_GATEWAY_PORTS: Specifies whether remote hosts are allowed to connect to ports forwarded for the client. Default is no
+- `SSH_GATEWAY_PORTS`: Specifies whether remote hosts are allowed to connect to ports forwarded for the client. Default is no
 
 The rest of the available environment variables are described [here](https://github.com/ajoergensen/baseimage-alpine#environment)
 
