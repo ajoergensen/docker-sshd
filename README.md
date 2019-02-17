@@ -6,7 +6,7 @@ Run a confined SSH server inside a Docker container - Made for ssh tunneling or 
 This container may not be for everybody as I have made a few decisions to suit my needs:
 
 - Requires key based authentication (map a directory containing `.ssh/authorized` keys to `/config`) or setting a password from the environment.
-- Either use the host's sshd keys or accept that new host keys will be generated when the container is regenerated
+- Either use the host's sshd keys or accept that new host keys will be generated when the container is regenerated (or generate a new, permanent, set of host keys and map them into the container)
 
 ### Usage
 
